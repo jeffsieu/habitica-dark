@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Habitica Dark
 @namespace      github.com/jeffsieu/habitica-dark
-@version        1.0.0
+@version        1.0.1
 @description    A dark theme for Habitica.com, following Material Design 2.0 colors
 @author         Jeff Sieu <jeffsy00@mgmail.com>
 @license        MIT
@@ -70,6 +70,7 @@ footer,
 .modal-content,
 .stats-column,
 #task-modal .advanced-settings,
+#task-modal .task-modal-content input,
 .task-disabled-habit-control-bg,
 .checklist-component .input-group .input-group-append,
 #avatar-modal #backgrounds .background-set,
