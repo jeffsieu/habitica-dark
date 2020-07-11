@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Habitica Dark
 @namespace      github.com/jeffsieu/habitica-dark
-@version        1.0.1
+@version        1.0.2
 @description    A dark theme for Habitica.com, following Material Design 2.0 colors
 @author         Jeff Sieu <jeffsy00@mgmail.com>
 @license        MIT
@@ -23,6 +23,7 @@ body {
     --text-primary-color: #fff;
     --text-secondary-color: #b3b3b3;
     --text-link-color: #90c6ff;
+    --text-mana-color: #75bee3;
     --text-gem-color: #a2efd3;
     --text-gold-color: #ffdb9f;
     --text-hourglass-color: #bae6fd;
@@ -115,7 +116,8 @@ footer,
 #buy-modal .modal-footer,
 .drawer-title,
 .side-panel,
-.left-panel {
+.left-panel,
+.spell {
     background-color: var(--background-color-3) !important;
 }
 
@@ -538,7 +540,8 @@ dt,
 .no-notifications p[data-v-27323d83],
 .nav-link,
 .modal-dialog .text,
-label small a {
+label small a,
+.spell {
     color: var(--text-primary-color) !important;
 }
     
@@ -612,6 +615,11 @@ textarea::placeholder{
 }
 
 /* Currency text */
+
+.mana {
+    color: var(--text-mana-color) !important;
+}
+
 .gem-lock span,
 .gem + .price,
 .hourglass + .price,
