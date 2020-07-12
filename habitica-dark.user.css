@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Habitica Dark
 @namespace      github.com/jeffsieu/habitica-dark
-@version        1.0.2
+@version        1.0.3
 @description    A dark theme for Habitica.com, following Material Design 2.0 colors
 @author         Jeff Sieu <jeffsy00@mgmail.com>
 @license        MIT
@@ -14,6 +14,7 @@ body {
     --background-color-4: #595959;
     --background-color-5: #6b6b6b;
     --background-color-purple: #584766;
+    --blue: #90c6ff;
     --green: #a2efd3;
     --red: #ff898b;
     --red-dropdown: #FBC1C2;
@@ -22,7 +23,6 @@ body {
     --text-hint-color: #808080;
     --text-primary-color: #fff;
     --text-secondary-color: #b3b3b3;
-    --text-link-color: #90c6ff;
     --text-mana-color: #75bee3;
     --text-gem-color: #a2efd3;
     --text-gold-color: #ffdb9f;
@@ -541,7 +541,8 @@ dt,
 .nav-link,
 .modal-dialog .text,
 label small a,
-.spell {
+.spell,
+.notification-content {
     color: var(--text-primary-color) !important;
 }
     
@@ -604,8 +605,10 @@ textarea::placeholder{
 /* Link text */
 :not(.alert-info) > a:not(.nav-link):not(.dropdown-item):not(.btn)[href],
 .markdown a,
-.filter-panel .tags-header a {
-    color: var(--text-link-color);
+.filter-panel .tags-header a,
+.notification-bold-blue,
+a.standard-link, a:not([href]):not([tabindex]).standard-link {
+    color: var(--blue);
 }
 
 /* Danger/red text */
