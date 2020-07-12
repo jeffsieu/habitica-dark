@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Habitica Dark
 @namespace      github.com/jeffsieu/habitica-dark
-@version        1.0.4
+@version        1.0.5
 @description    A dark theme for Habitica.com, following Material Design 2.0 colors
 @author         Jeff Sieu <jeffsy00@mgmail.com>
 @license        MIT
@@ -309,6 +309,10 @@ select {
     background-color: var(--background-color-1) !important;
     border-color: var(--background-color-5) !important;
     color: var(--text-primary-color) !important;
+}
+
+textarea.quick-add {
+    background-color: var(--background-color-2) !important;
 }
 
 /* Radio button */
