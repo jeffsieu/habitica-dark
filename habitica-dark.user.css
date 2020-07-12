@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Habitica Dark
 @namespace      github.com/jeffsieu/habitica-dark
-@version        1.0.3
+@version        1.0.4
 @description    A dark theme for Habitica.com, following Material Design 2.0 colors
 @author         Jeff Sieu <jeffsy00@mgmail.com>
 @license        MIT
@@ -303,7 +303,7 @@ span.badge.badge-round.badge-item.badge-clock,
 /* FORM CONTROLS */
 input,
 input.form-control,
-textarea:not(.quick-add),
+textarea,
 textarea.form-control,
 select {
     background-color: var(--background-color-1) !important;
